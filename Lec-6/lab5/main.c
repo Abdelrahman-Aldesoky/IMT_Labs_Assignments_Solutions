@@ -2,29 +2,27 @@
 
 int Get_SizeOfArr(void);
 void Populate_Array(int arr[], int Copy_size);
-int Scalar_Mul(int *ptr1, int *ptr2,int Copy_size);
+int Scalar_Mul(int *ptr1, int *ptr2, int Copy_size);
 
-int main (void)
+int main(void)
 {
     printf("array Size: \n");
-    int size=Get_SizeOfArr();
+    int size = Get_SizeOfArr();
 
-	int arr1[size];
-	int arr2[size];
-    
+    int arr1[size];
+    int arr2[size];
+
     printf("Please Populate First array\n");
-    Populate_Array(arr1,size);
+    Populate_Array(arr1, size);
     printf("Please Populate Second array\n");
-    Populate_Array(arr2,size);
+    Populate_Array(arr2, size);
 
-	int result = Scalar_Mul(arr1, arr2,size);
+    int result = Scalar_Mul(arr1, arr2, size);
 
-	
-	printf("The Result is:  %d",result);
+    printf("The Result is:  %d", result);
 
     return 0;
 }
-
 
 int Get_SizeOfArr(void)
 {
@@ -49,12 +47,12 @@ void Populate_Array(int arr[], int Copy_size)
     }
 }
 
-int Scalar_Mul(int *ptr1, int *ptr2,int Copy_size)
+int Scalar_Mul(int *ptr1, int *ptr2, int Copy_size)
 {
-	int Local_sum = 0;
-	for (int i=0;i<10;i++)
-	{
-		Local_sum += (ptr1[i] * ptr2[i]);
-	}
-	return Local_sum;
+    int Local_sum = 0;
+    for (int i = 0; i < 10; i++)
+    {
+        Local_sum += (ptr1[i] * ptr2[i]);
+    }
+    return Local_sum;
 }

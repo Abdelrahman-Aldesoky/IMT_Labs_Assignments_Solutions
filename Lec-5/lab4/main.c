@@ -15,7 +15,7 @@ int main(void)
     printf("Please Enter the number you are looking for: ");
     scanf("%d", &number_looking_for);
 
-    count=LinearSearch(arr,size,number_looking_for);
+    count = LinearSearch(arr, size, number_looking_for);
 
     if (count)
     {
@@ -36,7 +36,8 @@ int Get_SizeOfArr(void)
     while (Local_ArrSize <= 0)
     {
         scanf("%d", &Local_ArrSize);
-        if (Local_ArrSize > 0) break;
+        if (Local_ArrSize > 0)
+            break;
         printf("array size can't be less than or equal zero Please Try again: \n");
     }
     return Local_ArrSize;

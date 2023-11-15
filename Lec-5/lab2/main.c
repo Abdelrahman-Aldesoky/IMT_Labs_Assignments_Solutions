@@ -9,7 +9,7 @@ int main(void)
 
     int sum = 0;
     float average = 0;
-    
+
     for (int i = 0; i < size; i++)
     {
         printf("element - %d : ", i + 1);

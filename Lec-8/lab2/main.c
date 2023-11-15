@@ -19,7 +19,7 @@ s32 main(void)
     s32 Local_NumberOfEmployees = Get_NumberOfEmployees();
     Company employee[Local_NumberOfEmployees];
     Populate_CompanyStruct(employee, Local_NumberOfEmployees);
-    //Print_CompanyStruct(employee,Local_NumberOfEmployees);
+    // Print_CompanyStruct(employee,Local_NumberOfEmployees);
     for (s32 i = 0; i < Local_NumberOfEmployees; i++)
     {
         Local_TotalPayroll += (employee[i].Salary + employee[i].Bonus - employee[i].Deduction);

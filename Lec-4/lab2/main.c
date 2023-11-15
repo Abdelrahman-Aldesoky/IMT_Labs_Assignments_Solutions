@@ -43,8 +43,8 @@ int main(void)
 
 void swap(void)
 {
-    int temp=0;
-    temp=x;
-    x=y;
-    y=temp;
+    int temp = 0;
+    temp = x;
+    x = y;
+    y = temp;
 }

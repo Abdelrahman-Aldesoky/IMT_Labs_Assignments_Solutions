@@ -3,7 +3,8 @@
 
 typedef struct Node_type node;
 
-struct Node_type{
+struct Node_type
+{
     u32 value;
     node *Next;
 };

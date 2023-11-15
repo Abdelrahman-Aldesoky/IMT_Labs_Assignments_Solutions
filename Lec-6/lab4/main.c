@@ -3,22 +3,22 @@
 int Get_SizeOfArr(void);
 void Populate_Array(int arr[], int Copy_size);
 
-int main (void)
+int main(void)
 {
-    int size=Get_SizeOfArr();
-	int arr[size];
-    Populate_Array(arr,size);
-	int sum=0;
-	int *pARR = arr;
-	
-	for(int i=0; i<size; i++)
-	{
-		sum += *pARR;
-		pARR++;
-	}
-	
-	printf("The sum of the array is:  %d",sum);
-    
+    int size = Get_SizeOfArr();
+    int arr[size];
+    Populate_Array(arr, size);
+    int sum = 0;
+    int *pARR = arr;
+
+    for (int i = 0; i < size; i++)
+    {
+        sum += *pARR;
+        pARR++;
+    }
+
+    printf("The sum of the array is:  %d", sum);
+
     return 0;
 }
 
