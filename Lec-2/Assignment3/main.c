@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main(void)
 {
-    int number = 0, max = 0;
+    int number = 0, max = INT_MIN;
 
     for (int i = 0; i < 3; i++)
     {
